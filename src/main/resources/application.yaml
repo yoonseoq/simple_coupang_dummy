@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/simple_bank
+    username: root
+    password: mysql502
+  jpa:
+    database: mysql
+    hibernate:
+      #ddl-auto: create #entity? ?? ????? drop ? create ??.
+      ddl-auto: update #entity? ??? create, ?? ???? entity? ??? ??? ???? ?? ??
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50
+        format_sql: true #?? ?? ? ????? ???
+        order_updates: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mappers/**/*.xml
