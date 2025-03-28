@@ -1,13 +1,13 @@
-package com.green.simple_bank_dummy;
+package com.green.simple_coupang_dummy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimpleBankDummyApplication {
+public class SimpleCoupangDummyApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SimpleBankDummyApplication.class, args);
+        SpringApplication.run(SimpleCoupangDummyApplication.class, args);
     }
 
 }
