@@ -33,7 +33,7 @@ dependencies {
     testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.4'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     // https://mvnrepository.com/artifact/net.datafaker/datafaker
-    implementation 'net.datafaker:datafaker:2.4.2'
+    implementation 'net.datafaker:datafaker:2.4.2' // 더미데이터 넣기위한것
 }
 
 tasks.named('test') {

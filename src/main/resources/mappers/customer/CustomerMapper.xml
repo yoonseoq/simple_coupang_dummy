@@ -3,8 +3,21 @@
 <mapper namespace="com.green.simple_bank_dummy.customer.CustomerMapper">
     <insert id="save">
         insert into customer
-        set customer_id = #{customer_id}
+        set customer_id = #{customerId}
         , name = #{name}
         , email = #{email}
     </insert>
+
+    <delete id="clear">
+        TRUNCATE customer
+    </delete>
+
+    <select id="findMaxId">
+        SELECT IFNULL(MAX(customer_id), 0) FROM customer
+    </select>
+
+    <select id="findIdAll">
+        SELECT customer_id
+        FROM customer
+    </select>
 </mapper>
